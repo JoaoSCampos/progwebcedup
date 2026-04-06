@@ -11,9 +11,9 @@ function validarInput(element)
 
     // Regex que rejeita/não permite a digitação de caracteres que não sejam 
     // números, vírgula, ponto ou sinal de menos no começo da string
-    value = value.replace(/[^\d,.-]/g, "")          // allow digits, -, , .
-                 .replace(/(?!^)-/g, "")            // only one - at start
-                 .replace(/([.,].*)[.,]/g, "$1");   // only one decimal separator
+    value = value.replace(/[^\d,.-]/g, "")          // permite número e os caracteres "-", "," e "."
+                 .replace(/(?!^)-/g, "")            // permite apenas um "-", e apenas no começo
+                 .replace(/([.,].*)[.,]/g, "$1");   // permite apenas um separador decimal, seja ele "," ou "."
 
     input.value = value;
 }
