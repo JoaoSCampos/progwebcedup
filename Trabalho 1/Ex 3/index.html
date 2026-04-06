@@ -1,0 +1,40 @@
+<!--
+ENUNCIADO:
+Criar um programa para calcular o fatorial de um número. 
+(solicitar que o usuário digite um número até 20 e calcular o 
+fatorial do número informado. Caso seja um número maior que 20, 
+impedir o programa que faça o cálculo)
+-->
+
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="styles.css">
+<head>
+    <title id="titulo1">Cálculo de fatorial</title>
+</head>
+
+<body id='html1'>
+
+    <h1 id="cabecalho1">Cálculo de fatorial</h1>
+    <h2 id="cabecalho2">Digite um número<br>de 1 a 20:</h2>
+
+    <form id="calc_form">
+        
+        <label for="lNumero1">Número:</label>
+        <br>
+        <input type="text" class="numberInput" id="inpNumero1" required oninput="validarInput(this)" value="Digite um número">
+        <br><br>
+        
+        <button id="btnCalcular" type="submit" class="button">Calcular</button>
+        <br>
+
+        <label for="lResCalc">Resultado:</label>
+        <br>
+        <input type="text" id="inplResCalc" class="numberInput" value="" readonly="readonly">
+
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

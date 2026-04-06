@@ -1,0 +1,61 @@
+<!--
+ENUNCIADO:
+Criar uma calculadora simples. A calculadora deverá realizar as operações básicas de 
+soma, subtração, divisão e multiplicação. (solicitar o usuário a digitar 2 números, 
+que serão utilizados nas operações e depois digitar um terceiro para identificar qual 
+será a operação. 1-soma, 2-subtração, 3-divisão e 4-multiplicação)
+-->
+
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="styles.css">
+<head>
+    <title id="titulo1">Calculadora</title>
+</head>
+
+<body id='html1'>
+
+    <h1 id="cabecalho1">Calculadora</h1>
+    <h2 id="cabecalho2">Selecione umas <br>das 4 operações <br>aritméticas:</h2>
+
+    <form id="calc_form">
+        
+        <label for="lNumero1">Número 1:</label>
+        <br>
+        <input type="text" class="numberInput" id="inpNumero1" required oninput="validarInput(this)" value="Digite um número">
+        <br><br>
+
+        <input type="radio" id="rdSoma" class="radioInput" name="calc" value="Soma" checked required>
+        <label for="rdSoma">Somar</label>
+        <br>
+
+        <input type="radio" id="rdSubtracao" class="radioInput" name="calc" value="Subtracao">
+        <label for="rdSubtracao">Subtrair</label>
+        <br>
+
+        <input type="radio" id="rdMultiplicacao" class="radioInput" name="calc" value="Multiplicacao">
+        <label for="rdMultiplicacao">Multiplicar</label>
+        <br>
+
+        <input type="radio" id="rdDividir" class="radioInput" name="calc" value="Dividir">
+        <label for="rdDividir">Dividir</label>
+        <br><br>
+
+        <label for="lNumero2">Número 2:</label>
+        <br>
+        <input type="text" class="numberInput" id="inpNumero2" required oninput="validarInput(this)" value="Digite um número">
+        <br><br>
+        
+        <button id="btnCalcular" type="submit" class="button">Calcular</button>
+        <br><br>
+
+        <label for="lResCalc">Resultado:</label>
+        <br>
+        <input type="text" id="inplResCalc" class="numberInput" value="" readonly="readonly">
+
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

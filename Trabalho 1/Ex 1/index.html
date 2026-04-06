@@ -1,0 +1,48 @@
+<!--
+ENUNCIADO:
+Criar uma página para poder calcular a média de um aluno com base em 3 notas. 
+(solicitar que o usuário digite as 3 notas e então mostrar o resultado)
+-->
+
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="styles.css">
+<head>
+    <title id="titulo1">Calculo da média</title>
+</head>
+
+<body id='html1'>
+
+    <h1 id="cabecalho1">Calculo da média<br>entre três notas</h1>
+
+    <form id="calc_form">
+        
+        <label for="lNota1">Nota 1:</label><br>
+        <input type="text" class="numberInput" id="inpNota1" required oninput="validarInput(this)"><br>
+
+        <label for="lNota2">Nota 2:</label><br>
+        <input type="text" class="numberInput" id="inpNota2" required oninput="validarInput(this)"><br>
+
+        <label for="lNota3">Nota 3:</label><br>
+        <input type="text" class="numberInput" id="inpNota3" required oninput="validarInput(this)"><br>
+        
+        <br>
+
+        
+        <button id="btnCalcular" type="submit" class="button">Calcular</button>
+        
+        <!--
+        <button id="btnCalcular" type="button">Calcular</button>
+        -->
+        
+        <br>
+
+        <label for="lResMedia">Resultado:</label><br>
+        <input type="text" id="inpResMedia" class="numberInput" value="" readonly="readonly">
+
+    </form>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

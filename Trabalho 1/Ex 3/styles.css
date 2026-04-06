@@ -1,0 +1,57 @@
+/* Estilo padrão */
+h1 
+{
+    color: rgb(3, 45, 58);
+    text-align: center;
+}
+
+h2
+{
+    color: rgb(0, 14, 19);
+    text-align: center;
+}
+
+body 
+{
+    background: linear-gradient(to bottom, #5bb4c5, #9ddeeb);
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    display: flexbox; /* Responsive layouts and centering individual components */
+    place-items: center; /* Shorthand for both axes */
+    margin: auto;
+    /*
+    min-height: 100vh;
+    */
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.numberInput
+{
+    color:rgb(3, 16, 20);
+    background-color: rgb(231, 230, 247);
+    font-size: 18px;
+    height: 22px;
+    width: 250px;
+}
+
+.button 
+{
+    margin: 0 auto;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width:235px;
+    height:50px;
+    background: linear-gradient(rgb(173, 243, 255), rgb(191, 235, 252), rgb(55, 119, 134));
+    border: 2px solid rgb(19, 2, 78);
+    border-radius: 5px;
+    color: rgb(19, 3, 87);
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
